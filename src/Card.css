@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.card h2 {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card button {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.delete {
+  background-color: hsl(0, 72%, 51%);
+}
+
+.delete:hover {
+  background-color: hsl(0, 82%, 51%);
+}
+
+.mark-answered {
+  background-color: hsl(221, 83%, 53%);
+}
+
+.mark-answered:hover {
+  background-color: hsl(221, 100%, 53%);
+}
+
+.next {
+  background-color: hsl(161, 94%, 30%);
+}
+
+.next:hover {
+  background-color: hsl(161, 84%, 30%);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  .card button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
